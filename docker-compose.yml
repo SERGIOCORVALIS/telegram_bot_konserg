@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    build: .
+    container_name: telegram-bot
+    restart: unless-stopped
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - OPENROUTER_API_KEY_1=${OPENROUTER_API_KEY_1}
+      - OPENROUTER_API_KEY_2=${OPENROUTER_API_KEY_2}
+      - OPENROUTER_API_KEY_3=${OPENROUTER_API_KEY_3}
+      - OPENROUTER_API_KEY_4=${OPENROUTER_API_KEY_4}
+      - APP_PUBLIC_URL=${APP_PUBLIC_URL:-https://example.com}
+      - APP_NAME=${APP_NAME:-AI Assistant Bot}
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
