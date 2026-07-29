@@ -1,3 +1,7 @@
+I am self-taught and really enjoy exploring the field of IT. I would be grateful for any support for my future work in this area; advancing requires modern equipment that I unfortunately cannot afford. 
+ USDT(ERC20) 0x587d0B8B786BC8254862dFDd632E00C81752B50a
+ BTC 1Hehwq6T9E6JhWu1u7e7PHAqxmQwQXWA9m
+
 # DeepSeek V3.1 Telegram Bot
 
 Telegram bot built with `aiogram` that answers user questions using the `DeepSeek V3.1 (free)` model via [OpenRouter](https://openrouter.ai/) API.
