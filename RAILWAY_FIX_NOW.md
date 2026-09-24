@@ -29,32 +29,32 @@ Click **"New Variable"** button and add each variable one by one:
 
 **Variable 1:**
 - **Key**: `TELEGRAM_BOT_TOKEN`
-- **Value**: `REDACTED`
+- **Value**: `YOUR_SECRET_HERE`
 - Click **"Add"**
 
 **Variable 2:**
 - **Key**: `OPENROUTER_API_KEY`
-- **Value**: `REDACTED`
+- **Value**: `YOUR_SECRET_HERE`
 - Click **"Add"**
 
 **Variable 3:**
 - **Key**: `OPENROUTER_API_KEY_1`
-- **Value**: `REDACTED`
+- **Value**: `YOUR_SECRET_HERE`
 - Click **"Add"**
 
 **Variable 4:**
 - **Key**: `OPENROUTER_API_KEY_2`
-- **Value**: `REDACTED`
+- **Value**: `YOUR_SECRET_HERE`
 - Click **"Add"**
 
 **Variable 5:**
 - **Key**: `OPENROUTER_API_KEY_3`
-- **Value**: `REDACTED`
+- **Value**: `YOUR_SECRET_HERE`
 - Click **"Add"**
 
 **Variable 6:**
 - **Key**: `OPENROUTER_API_KEY_4`
-- **Value**: `REDACTED`
+- **Value**: `YOUR_SECRET_HERE`
 - Click **"Add"**
 
 **Variable 7 (Optional but recommended):**

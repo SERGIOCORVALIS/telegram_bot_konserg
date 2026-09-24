@@ -127,8 +127,8 @@ API Key 1: ***REMOVED*** (length: 72)  ← Длина больше = лишни�
 ## 📝 Пример правильных переменных в Railway
 
 ```
-TELEGRAM_BOT_TOKEN = REDACTED
-OPENROUTER_API_KEY = REDACTED
+TELEGRAM_BOT_TOKEN = YOUR_TELEGRAM_BOT_TOKEN
+OPENROUTER_API_KEY = YOUR_OPENROUTER_API_KEY
 ```
 
 **Важно:** Значения БЕЗ кавычек и пробелов!

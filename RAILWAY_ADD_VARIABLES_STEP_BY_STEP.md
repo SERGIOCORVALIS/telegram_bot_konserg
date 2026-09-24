@@ -25,13 +25,13 @@ RuntimeError: Environment variables are required: TELEGRAM_BOT_TOKEN
 ### Step 4: Add First Variable (TELEGRAM_BOT_TOKEN)
 1. Click the button **"New Variable"** or **"+ New"**
 2. In the **"Key"** field, type exactly: `TELEGRAM_BOT_TOKEN`
-3. In the **"Value"** field, paste: `REDACTED`
+3. In the **"Value"** field, paste: `YOUR_SECRET_HERE`
 4. Click **"Add"** or **"Save"**
 
 ### Step 5: Add Second Variable (OPENROUTER_API_KEY)
 1. Click **"New Variable"** again
 2. **Key**: `OPENROUTER_API_KEY`
-3. **Value**: `REDACTED`
+3. **Value**: `YOUR_SECRET_HERE`
 4. Click **"Add"**
 
 ### Step 6: Add Additional Keys (Optional but Recommended)
@@ -39,19 +39,19 @@ Repeat for each:
 
 **Variable 3:**
 - Key: `OPENROUTER_API_KEY_1`
-- Value: `REDACTED`
+- Value: `YOUR_SECRET_HERE`
 
 **Variable 4:**
 - Key: `OPENROUTER_API_KEY_2`
-- Value: `REDACTED`
+- Value: `YOUR_SECRET_HERE`
 
 **Variable 5:**
 - Key: `OPENROUTER_API_KEY_3`
-- Value: `REDACTED`
+- Value: `YOUR_SECRET_HERE`
 
 **Variable 6:**
 - Key: `OPENROUTER_API_KEY_4`
-- Value: `REDACTED`
+- Value: `YOUR_SECRET_HERE`
 
 ### Step 7: Verify Variables Are Added
 After adding, you should see a list like this:

@@ -12,7 +12,7 @@ TokenValidationError: Token is invalid!
 ### Step 1: Check Token Format
 A valid Telegram bot token looks like:
 ```
-REDACTED
+YOUR_SECRET_HERE
 ```
 Format: `NUMBER:ALPHANUMERIC_STRING`
 
@@ -32,9 +32,9 @@ Format: `NUMBER:ALPHANUMERIC_STRING`
 3. Find `TELEGRAM_BOT_TOKEN` in the list
 4. Click on it (or click the edit/pencil icon)
 5. **Check the Value field:**
-   - ❌ **Wrong:** `"REDACTED"` (with quotes)
-   - ❌ **Wrong:** ` REDACTED ` (with spaces)
-   - ✅ **Right:** `REDACTED` (no quotes, no spaces)
+   - ❌ **Wrong:** `"YOUR_SECRET_HERE"` (with quotes)
+   - ❌ **Wrong:** ` YOUR_SECRET_HERE ` (with spaces)
+   - ✅ **Right:** `YOUR_SECRET_HERE` (no quotes, no spaces)
 6. **Remove any quotes or spaces** from the beginning/end
 7. Paste the correct token (without quotes)
 8. Click **"Save"** or **"Update"**
@@ -45,20 +45,20 @@ Format: `NUMBER:ALPHANUMERIC_STRING`
 3. Click delete/trash icon
 4. Click **"New Variable"**
 5. **Key:** `TELEGRAM_BOT_TOKEN`
-6. **Value:** `REDACTED` (NO QUOTES, NO SPACES)
+6. **Value:** `YOUR_SECRET_HERE` (NO QUOTES, NO SPACES)
 7. Click **"Add"**
 
 ### Step 4: Verify Token Format
 After saving, the token should look exactly like this in Railway:
 ```
-TELEGRAM_BOT_TOKEN = REDACTED
+TELEGRAM_BOT_TOKEN = YOUR_TELEGRAM_BOT_TOKEN
 ```
 
 **NOT like this:**
 ```
-TELEGRAM_BOT_TOKEN = "REDACTED"  ❌
-TELEGRAM_BOT_TOKEN = 'REDACTED'  ❌
-TELEGRAM_BOT_TOKEN =  REDACTED   ❌
+TELEGRAM_BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"  ❌
+TELEGRAM_BOT_TOKEN = 'YOUR_SECRET_HERE'  ❌
+TELEGRAM_BOT_TOKEN =  YOUR_TELEGRAM_BOT_TOKEN   ❌
 ```
 
 ### Step 5: Wait for Restart
@@ -97,12 +97,12 @@ Run polling for bot @AIpomoshnikalissabot id=...
 
 Your token should be exactly:
 ```
-REDACTED
+YOUR_SECRET_HERE
 ```
 
 **In Railway Variables:**
 - Key: `TELEGRAM_BOT_TOKEN`
-- Value: `REDACTED` ← No quotes, no spaces
+- Value: `YOUR_SECRET_HERE` ← No quotes, no spaces
 
 ## 🆘 Still Not Working?
 

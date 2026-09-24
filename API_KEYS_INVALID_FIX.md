@@ -88,7 +88,7 @@ Once you add valid keys:
    - OpenRouter Discord: [discord.gg/openrouter](https://discord.gg/openrouter)
 
 2. **Verify Key Format:**
-   - Valid key: `REDACTED`
+   - Valid key: `YOUR_SECRET_HERE`
    - Length: ~73 characters
    - Starts with: `sk-or-v1-`
 

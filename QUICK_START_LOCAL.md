@@ -3,7 +3,7 @@
 ## ✅ Bot is Now Running!
 
 The bot has been started with:
-- **Telegram Token:** `REDACTED`
+- **Telegram Token:** `YOUR_SECRET_HERE`
 - **OpenRouter API Keys:** 5 keys configured
 - **Status:** Running in background
 
@@ -40,8 +40,8 @@ To stop the bot:
 ### Manual Way:
 ```powershell
 # Set variables
-$env:TELEGRAM_BOT_TOKEN="REDACTED"
-$env:OPENROUTER_API_KEY="REDACTED"
+$env:TELEGRAM_BOT_TOKEN="YOUR_TELEGRAM_BOT_TOKEN"
+$env:OPENROUTER_API_KEY="YOUR_OPENROUTER_API_KEY"
 # ... (other keys)
 
 # Run
