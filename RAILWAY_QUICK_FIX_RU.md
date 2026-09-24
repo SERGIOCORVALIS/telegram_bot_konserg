@@ -30,34 +30,34 @@ RuntimeError: Переменные среды обязательны: TELEGRAM_B
 
 **1. TELEGRAM_BOT_TOKEN**
 - **Key:** `TELEGRAM_BOT_TOKEN`
-- **Value:** `REDACTED`
+- **Value:** `YOUR_SECRET_HERE`
 - Нажмите **"Add"**
 
 **2. OPENROUTER_API_KEY** (можно использовать дефолтные ключи из кода, но лучше добавить)
 - **Key:** `OPENROUTER_API_KEY`
-- **Value:** `REDACTED`
+- **Value:** `YOUR_SECRET_HERE`
 - Нажмите **"Add"**
 
 #### 📋 РЕКОМЕНДУЕТСЯ (для стабильной работы):
 
 **3. OPENROUTER_API_KEY_1**
 - **Key:** `OPENROUTER_API_KEY_1`
-- **Value:** `REDACTED`
+- **Value:** `YOUR_SECRET_HERE`
 - Нажмите **"Add"**
 
 **4. OPENROUTER_API_KEY_2**
 - **Key:** `OPENROUTER_API_KEY_2`
-- **Value:** `REDACTED`
+- **Value:** `YOUR_SECRET_HERE`
 - Нажмите **"Add"**
 
 **5. OPENROUTER_API_KEY_3**
 - **Key:** `OPENROUTER_API_KEY_3`
-- **Value:** `REDACTED`
+- **Value:** `YOUR_SECRET_HERE`
 - Нажмите **"Add"**
 
 **6. OPENROUTER_API_KEY_4**
 - **Key:** `OPENROUTER_API_KEY_4`
-- **Value:** `REDACTED`
+- **Value:** `YOUR_SECRET_HERE`
 - Нажмите **"Add"**
 
 #### 🔧 ОПЦИОНАЛЬНО:

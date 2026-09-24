@@ -24,19 +24,6 @@ AVAILABLE_MODELS: Final[list[str]] = [
     "deepseek/deepseek-chat-v3.1:free",
 ]
 
-# List of API keys for rotation
-DEFAULT_API_KEYS: Final[list[str]] = [
-    "REDACTED",
-    "REDACTED",
-    "REDACTED",
-    "REDACTED",
-    "REDACTED",
-    "REDACTED",
-    "REDACTED",
-]
-
-DEFAULT_TELEGRAM_TOKEN: Final[str] = ""
-DEFAULT_OPENROUTER_API_KEY: Final[str] = DEFAULT_API_KEYS[0]
 SYSTEM_PROMPT: Final[str] = (
     "You are a helpful AI assistant helping users in Telegram. "
     "Provide concise, well-structured answers in the language of the question. "
@@ -62,36 +49,28 @@ class Settings:
     @classmethod
     def from_env(cls) -> "Settings":
         load_dotenv()
-        telegram_token = os.getenv("TELEGRAM_BOT_TOKEN", DEFAULT_TELEGRAM_TOKEN)
+        telegram_token = os.getenv("TELEGRAM_BOT_TOKEN", "")
         # Clean token: remove quotes and whitespace
         if telegram_token:
             telegram_token = telegram_token.strip().strip('"').strip("'")
-        
-        # Collect all available keys from environment variables
+
+        # Collect API keys only from environment / .env (no hardcoded fallbacks)
         api_keys: list[str] = []
-        # Main key
-        main_key = os.getenv("OPENROUTER_API_KEY", DEFAULT_OPENROUTER_API_KEY)
+        main_key = os.getenv("OPENROUTER_API_KEY", "")
         if main_key:
-            # Clean key: remove quotes and whitespace (same as token)
             main_key = main_key.strip().strip('"').strip("'")
             if main_key:
                 api_keys.append(main_key)
-        
+
         # Additional keys OPENROUTER_API_KEY_1, OPENROUTER_API_KEY_2, etc.
-        for i in range(1, 10):  # Check up to 9 additional keys
+        for i in range(1, 10):
             key = os.getenv(f"OPENROUTER_API_KEY_{i}")
             if key:
-                # Clean key: remove quotes and whitespace
                 key = key.strip().strip('"').strip("'")
                 if key and key not in api_keys:
                     api_keys.append(key)
-        
-        # If no keys, use defaults
-        if not api_keys:
-            api_keys = DEFAULT_API_KEYS.copy()
-        
+
         # Validate API keys format (OpenRouter keys should start with "sk-or-v1-")
-        # Log warning for invalid keys but don't fail (might be valid custom format)
         for i, key in enumerate(api_keys):
             if key and not key.startswith("sk-or-v1-") and len(key) > 10:
                 logging.warning(
